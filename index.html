@@ -1,76 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bakaroglu Nakliyat | İzmir Evden Eve Nakliyat</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakaroğlu Nakliyat | İzmir Evden Eve Nakliyat</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="navbar">
-  <div class="logo">BAKAROĞLU NAKLİYAT</div>
+  <div class="navbar">
+    <div class="logo">BAKAROĞLU NAKLİYAT</div>
 
-  <div class="menu-toggle">☰</div>
+    <div class="menu-toggle">☰</div>
 
-  <div class="nav-links" id="navLinks">
-    <a href="index.html">Ana Sayfa</a>
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="galeri.html">Galeri</a>
-    <a href="iletisim.html">İletişim</a>
+    <div class="nav-links">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="#">Hakkımızda</a>
+      <a href="#">Hizmetler</a>
+      <a href="#">İletişim</a>
+    </div>
   </div>
-</div>
 
-<div class="hero">
-  <div>
+  <section style="padding:60px 20px; text-align:center;">
     <h1>İzmir Evden Eve Nakliyat</h1>
-    <p>Güvenli • Sigortalı • Profesyonel Taşıma</p>
-    <a href="iletisim.html" class="button">Hemen Teklif Al</a>
-  </div>
-</div>
+    <p>Profesyonel, güvenilir ve hızlı taşımacılık hizmeti.</p>
 
-<div class="section">
-  <h2>Hizmetlerimiz</h2>
-
-  <div class="services">
-
-    <div class="card">
-      <h3>Evden Eve Nakliyat</h3>
-      <p>Eşyalarınızı sigortalı ve güvenli şekilde taşıyoruz.</p>
+    <!-- ARAMA KUTUSU -->
+    <div style="margin-top:30px;">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Hizmet ara..." 
+        style="padding:10px; width:250px; max-width:80%; border:1px solid #ccc; border-radius:5px;"
+      >
+      <button 
+        onclick="searchFunction()" 
+        style="padding:10px 15px; background:#111; color:white; border:none; border-radius:5px; cursor:pointer;"
+      >
+        Ara
+      </button>
     </div>
 
-    <div class="card">
-      <h3>Ofis Taşıma</h3>
-      <p>Hızlı, planlı ve profesyonel ofis taşıma çözümleri.</p>
-    </div>
+  </section>
 
-    <div class="card">
-      <h3>Şehirler Arası Nakliyat</h3>
-      <p>Türkiye geneli güvenli ve zamanında teslimat.</p>
-    </div>
-
-  </div>
-</div>
-
-<a class="whatsapp" href="https://wa.me/905317887636" target="_blank">
-WhatsApp
-</a>
-<footer style="background:#111; color:white; padding:40px 20px; text-align:center;">
-  <h3>BAKAROĞLU NAKLİYAT</h3>
-  <p>İzmir Evden Eve Nakliyat Hizmetleri</p>
-  <p>Telefon: 0531 788 76 36</p>
-  <p>© 2026 Tüm Hakları Saklıdır.</p>
-</footer>
   <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".nav-links");
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-links");
 
-  toggle.addEventListener("click", function () {
-    nav.classList.toggle("active");
-  });
-});
-</script>
+      toggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+      });
+    });
+
+    function searchFunction() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+
+      if (input.includes("ev")) {
+        alert("Evden Eve Nakliyat hizmetimiz mevcut.");
+      } 
+      else if (input.includes("ofis")) {
+        alert("Ofis Taşımacılığı hizmetimiz mevcut.");
+      } 
+      else {
+        alert("Aradığınız hizmet bulunamadı.");
+      }
+    }
+  </script>
+
 </body>
- 
+</html>
