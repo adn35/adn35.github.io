@@ -66,38 +66,3 @@ function toggleMenu() {
 }
 </script>
 </html>
-/* Hamburger buton */
-.menu-toggle {
-  display:none;
-  font-size:28px;
-  cursor:pointer;
-}
-
-/* Mobil görünüm */
-@media (max-width:768px) {
-
-  .menu-toggle {
-    display:block;
-  }
-
-  .nav-links {
-    position:absolute;
-    top:70px;
-    right:0;
-    background:white;
-    width:200px;
-    flex-direction:column;
-    align-items:flex-start;
-    padding:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    display:none;
-  }
-
-  .nav-links a {
-    margin:10px 0;
-  }
-
-  .nav-links.active {
-    display:flex;
-  }
-}
