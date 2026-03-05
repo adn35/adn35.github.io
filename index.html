@@ -11,22 +11,6 @@
 
 <link rel="canonical" href="https://adn35.github.io/">
 
-<meta property="og:title" content="Bakaroğlu Nakliyat İzmir">
-<meta property="og:description" content="İzmir evden eve nakliyat hizmeti. Güvenli ve uygun fiyatlı taşımacılık.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://adn35.github.io/">
-
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "MovingCompany",
- "name": "Bakaroğlu Nakliyat",
- "telephone": "05317887636",
- "areaServed": "İzmir",
- "url": "https://adn35.github.io/"
-}
-</script>
-
 <style>
 
 body{
@@ -40,6 +24,26 @@ background:#111;
 color:white;
 text-align:center;
 padding:30px;
+}
+
+.search-box{
+margin-top:20px;
+}
+
+.search-box input{
+padding:10px;
+width:220px;
+border-radius:5px;
+border:none;
+}
+
+.search-box button{
+padding:10px 20px;
+border:none;
+background:#25D366;
+color:white;
+border-radius:5px;
+cursor:pointer;
 }
 
 section{
@@ -110,8 +114,15 @@ font-weight:bold;
 <body>
 
 <header>
+
 <h1>Bakaroğlu Nakliyat</h1>
 <p>İzmir Evden Eve Nakliyat Hizmeti</p>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="İlçe ara...">
+<button onclick="siteSearch()">Ara</button>
+</div>
+
 </header>
 
 <section>
@@ -164,17 +175,17 @@ font-weight:bold;
 
 <div class="card">
 ⭐ ⭐ ⭐ ⭐ ⭐ <br><br>
-Gerçekten çok güvenilir nakliyat firması. Eşyalarımız sorunsuz taşındı.
+Eşyalarımız çok dikkatli taşındı. Tavsiye ederim.
 </div>
 
 <div class="card">
 ⭐ ⭐ ⭐ ⭐ ⭐ <br><br>
-İzmir'de tavsiye edeceğim en iyi nakliyat firması.
+İzmir’de gerçekten güvenilir nakliyat firması.
 </div>
 
 <div class="card">
 ⭐ ⭐ ⭐ ⭐ ⭐ <br><br>
-Hızlı ve dikkatli taşıma yaptılar teşekkür ederiz.
+Hızlı ve sorunsuz taşındık teşekkürler.
 </div>
 
 </div>
@@ -200,29 +211,8 @@ style="border:0;">
 
 <p>
 Bakaroğlu Nakliyat İzmir'de profesyonel evden eve nakliyat hizmeti sunmaktadır.
-Karşıyaka evden eve nakliyat, Bornova evden eve nakliyat,
-Buca evden eve nakliyat, Bayraklı evden eve nakliyat,
-Konak evden eve nakliyat ve Çiğli evden eve nakliyat
-hizmetleri vermekteyiz.
-</p>
-
-<p>
-İzmir asansörlü nakliyat, şehirler arası nakliyat ve ofis taşımacılığı
-hizmetlerimiz ile güvenli taşımacılık sağlıyoruz.
-</p>
-
-</section>
-
-<section>
-
-<h2>İzmir İlçelerinde Nakliyat Hizmeti</h2>
-
-<p>
-Karşıyaka nakliyat, Bornova nakliyat, Buca nakliyat, Bayraklı nakliyat,
-Konak nakliyat, Çiğli nakliyat, Gaziemir nakliyat, Balçova nakliyat,
-Narlıdere nakliyat, Urla nakliyat, Menemen nakliyat,
-Torbalı nakliyat, Çeşme nakliyat ve Güzelbahçe nakliyat
-hizmetleri sunmaktayız.
+Karşıyaka, Bornova, Buca, Bayraklı, Konak ve Çiğli başta olmak üzere
+İzmir’in tüm ilçelerinde taşımacılık yapıyoruz.
 </p>
 
 </section>
@@ -232,6 +222,32 @@ Bakaroğlu Nakliyat © 2026
 </footer>
 
 <a class="whatsapp" href="https://wa.me/905317887636">WhatsApp</a>
+
+<script>
+
+function siteSearch(){
+
+var text=document.getElementById("searchInput").value.toLowerCase();
+
+if(text.includes("karşıyaka")) window.location="karsiyaka.html";
+else if(text.includes("bornova")) window.location="bornova.html";
+else if(text.includes("buca")) window.location="buca.html";
+else if(text.includes("bayraklı")) window.location="bayrakli.html";
+else if(text.includes("konak")) window.location="konak.html";
+else if(text.includes("çiğli")) window.location="cigli.html";
+else if(text.includes("gaziemir")) window.location="gaziemir.html";
+else if(text.includes("balçova")) window.location="balcova-nakliyat.html";
+else if(text.includes("narlıdere")) window.location="narlidere-nakliyat.html";
+else if(text.includes("urla")) window.location="urla-nakliyat.html";
+else if(text.includes("menemen")) window.location="menemen.html";
+else if(text.includes("torbalı")) window.location="torbali.html";
+else if(text.includes("çeşme")) window.location="cesme.html";
+else if(text.includes("güzelbahçe")) window.location="guzelbahce.html";
+else alert("Aradığınız ilçe bulunamadı");
+
+}
+
+</script>
 
 </body>
 </html>
